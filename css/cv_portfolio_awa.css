@@ -1,0 +1,46 @@
+.photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.cv-container {
+    display: flex;
+    margin: 0 auto;
+    flex-direction: row-reverse;
+}
+
+.droite {
+    width: 30%;
+    padding: 20px;
+    background-color:#7C5740;
+    
+}
+
+.droite h2 ,.droite p , .droite li {
+    color:white;
+}
+.gauche {
+    width: 70%;
+    padding: 20px;
+}
+
+
+.profil{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: #564032;
+}
+
+.profil h1 ,.profil p , .profil h3 {
+    color:white;
+}
+.photo{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
+}
+
