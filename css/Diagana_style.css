@@ -1,0 +1,201 @@
+:root{
+    --deep-walnut:#50392B;
+    --black:#472106da;
+    --white:#ffffff;
+    --coffee-light:#C6BEB5;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+    background:var(--coffee-light);
+}
+
+.cv{
+    width:1000px;
+    margin:40px auto;
+    display:flex;
+    background:var(--white);
+    box-shadow:0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* LEFT SIDE */
+.left{
+    width:35%;
+    background:var(--black);
+    color:var(--white);
+    padding:30px;
+    position:relative;
+}
+
+.photo img {
+    width: 100%;
+    border-radius: 10px;
+    border: 4px solid var(--deep-walnut);
+}
+
+/* Bloc nom incliné */
+.name-box{
+    background:var(--deep-walnut);
+    padding:20px;
+    margin-top:-30px;
+    transform:skewY(-3deg);
+}
+
+.name-box h1,
+.name-box h2{
+    transform:skewY(3deg);
+}
+
+.name-box h1{
+    font-size:20px;
+}
+
+.name-box h2{
+    font-size:14px;
+    font-weight:normal;
+}
+
+/* Sections */
+section{
+    margin-top:40px;
+}
+
+section h3{
+    margin-bottom:15px;
+    border-bottom:1px solid var(--coffee-light);
+    padding-bottom:5px;
+}
+
+section ul{
+    list-style:none;
+}
+
+section ul li{
+    margin-bottom:8px;
+    font-size:14px;
+}
+
+/* RIGHT SIDE */
+.right{
+    width:65%;
+    padding:40px;
+    background:var(--white);
+}
+
+.block{
+    margin-bottom:40px;
+}
+
+.title-line{
+    display:flex;
+    align-items:center;
+    margin-bottom:15px;
+}
+
+.title-line h2{
+    margin-right:15px;
+    font-size:22px;
+}
+
+.line{
+    flex:1;
+    height:2px;
+    background:var(--deep-walnut);
+}
+
+/* Items formation */
+.item {
+    display: flex;
+    margin-bottom: 35px;
+}
+
+.date {
+    width: 150px;
+    font-weight: bold;
+    color: var(--deep-walnut);
+}
+
+.content {
+    flex: 1;
+}
+
+.content h4 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.content p {
+    font-style: italic;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.details {
+    padding-left: 18px;
+}
+
+.details li {
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+
+.contact-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-section ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+
+.contact-section ul li i {
+    width: 20px;
+    margin-right: 10px;
+    color: var(--white);
+}
+
+.contact-section ul li a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.contact-section ul li a:hover {
+    text-decoration: underline;
+}
+/* TEST */
+.languages .lang-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.dots {
+    display: flex;
+    gap: 6px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--deep-walnut); /* point vide */
+}
+
+.dot.active {
+    background: #ffffff; /* point rempli */
+}
+.listdodo{
+        display: flex;
+
+}
