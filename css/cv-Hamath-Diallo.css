@@ -1,23 +1,22 @@
-
 .main{
     display: flex;
-    margin: auto;
+    margin-top: 40px;
+    margin-left: 450px;
     background-color: #f9f9f9;
     width: 500px;
-    height: 900px;
+    height: 850px;
     padding: 10px;
     border: #000000 1px solid;
 }
 .main .cv{
     position: relative;
-    background-color: #E6D4C5;
+    background-color: #7c5740ff;
     width: 95%;
     height: 99%;
     border-top: #000000 1px solid;
     border-bottom: #000000 1px solid;
     border-left: #000000 1px solid;
     border-radius: 10px 0px 0px 10px;
-    z-index: 2;
 }
 .main .cv2{
     background-color: #ffffff;
@@ -59,6 +58,7 @@ img {
     border-radius: 10px 0px 0px 10px;
 }
 .nom {
+    color: #321D10 ;
     font-family: montserat, sans-serif;
     font-size: 24px;
     font-weight: bold;
@@ -79,6 +79,7 @@ img {
     margin-top: -8px;
 }
 h1{
+    color: #f9f9f9;
     font-family: montserat, sans-serif;
     font-size: 20px;
     font-weight: bold;
@@ -88,17 +89,22 @@ h1{
 
 }
 ul li{
+    color: #f9f9f9;
     margin-bottom: 5px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 11px;
-    margin-left: -70px;
+    margin-left: -60px;
 }
 .f {
+    color: #000000;
     font-family: Arial, Helvetica, sans-serif;
     margin-left: 15px;
     margin-top: 225px;
 }
 .liste-f{
+    .liste-ff {
+        color: #000;
+    }
     font-family: Arial, Helvetica, sans-serif;
     font-size: 11px;
     margin-left: 45px;
@@ -115,4 +121,27 @@ li i {
 }
 span{
     font-weight: bold;
+}
+.button{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 10px 20px;
+    background-color: #7c5740ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.retour {
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #5a3e2bff;
+    a{
+        text-decoration: none;
+        color: white;
+    }
 }
