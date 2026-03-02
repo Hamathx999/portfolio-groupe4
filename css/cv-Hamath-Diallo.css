@@ -1,0 +1,118 @@
+
+.main{
+    display: flex;
+    margin: auto;
+    background-color: #f9f9f9;
+    width: 500px;
+    height: 900px;
+    padding: 10px;
+    border: #000000 1px solid;
+}
+.main .cv{
+    position: relative;
+    background-color: #E6D4C5;
+    width: 95%;
+    height: 99%;
+    border-top: #000000 1px solid;
+    border-bottom: #000000 1px solid;
+    border-left: #000000 1px solid;
+    border-radius: 10px 0px 0px 10px;
+    z-index: 2;
+}
+.main .cv2{
+    background-color: #ffffff;
+    width: 95%;
+    height: 99%;
+    border-top: #000000 1px solid;
+    border-bottom: #000000 1px solid;
+    border-right: #000000 1px solid;
+    border-radius: 0px 10px 10px 0px;
+}
+.rond {
+    background-color: #ffffff;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    margin: 20px auto;
+    padding : 7px;
+}
+.images{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img {
+    position: absolute;
+    bottom: -160px;
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    /* margin-bottom: -45px; */
+}
+.carre{
+    background-color: #F8EDE8;
+    width: 290px;
+    height: 135px;
+    margin-left: 140px;
+    margin-top: 5px;
+    border-radius: 10px 0px 0px 10px;
+}
+.nom {
+    font-family: montserat, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+.titre {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: -5px;
+    margin-left: 15px;
+}
+.carre .presentation{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    margin: 6px;
+    margin-top: -8px;
+}
+h1{
+    font-family: montserat, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: -40px;
+    color: 321D10;
+
+}
+ul li{
+    margin-bottom: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    margin-left: -70px;
+}
+.f {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 15px;
+    margin-top: 225px;
+}
+.liste-f{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    margin-left: 45px;
+}
+.c{ 
+    margin-bottom: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    margin-left: -5px;
+    list-style: none;
+}
+li i {
+  margin-right: 10px;
+}
+span{
+    font-weight: bold;
+}
