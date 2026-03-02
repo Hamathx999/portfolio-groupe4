@@ -1,0 +1,85 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background: #c9ccce;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    font-family: 'Times New Roman';
+}
+
+.cv-container {
+    width: 400px;
+    height: 600px;
+    background: #fff;
+    display: flex;
+}
+
+.colonne-gauche {
+    width: 35%;
+    height: 100%;
+    background: #E6D4C5;
+    display: flex;
+    flex-direction: column;
+}
+
+.colonne-gauche .image-profil {
+    margin: 10px auto;
+    width: 80%;
+    height: 20%;
+    background: url("https://avatars.githubusercontent.com/u/122863441?v=4") no-repeat center;
+    background-size: cover;
+}
+
+
+section {
+    height: 14%;
+    justify-items: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+    h6 {
+        margin: auto;
+        font-size: 14px;
+    }
+
+    p {
+        margin: auto;
+        font-size: 12px;
+    }
+}
+
+
+.colonne-droite {
+    width: 65%;
+    height: 100%;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+
+    .pheno {
+        width: 100%;
+        height: 20%;
+        background-color: #7C5740;
+
+        h2 {
+            color: #fff;
+        }
+
+        h4 {
+            color: #fff;
+            margin-left: 70px;
+        }
+    }
+
+    .formation {
+        margin: 10px 5px;
+
+    }
+    .experience {
+        margin: 10px 5px;
+    }
+}
