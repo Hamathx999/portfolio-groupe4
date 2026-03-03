@@ -1,46 +1,281 @@
+:root {
+    --couleur-primaire: #7C5740;
+    --decalement: 5vh;
+    --couleur-profil: #564032;
+    --indentation-texte: 10vw;
+    --espacement-interieur: 250px 0 0 0;
+}
+
+body {
+    background-color: white;
+}
+
+main {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    border-radius: .5vw;
+    border: .5px solid black;
+}
+
+.gauche {
+    padding: var(--espacement-interieur);
+    /* width: 30%; */
+    background-color: var(--couleur-primaire);
+}
+
+.gauche h2 {
+    color: #f7f4f3;
+    align-items: center;
+}
+
+.gauche li {
+    font-family: 'open sans';
+    color: white;
+
+}
+
+.droite {
+    padding: var(--espacement-interieur);
+    height: 87vh;
+    background-color: #ffff;
+}
+
+.droite h2,
+.droite p,
+.droite li,
+.droite ul {
+    color: rgb(3, 3, 3);
+}
+
+.droite ul,
+.droite li,
+.droite p {
+    font-family: 'open sans';
+}
+
+.droite h2 {
+    color: #7C5740;
+}
+
+
 .photo {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-}
-
-.cv-container {
-    display: flex;
-    margin: 0 auto;
-    flex-direction: row-reverse;
-}
-
-.droite {
-    width: 30%;
-    padding: 20px;
-    background-color:#7C5740;
-    
-}
-
-.droite h2 ,.droite p , .droite li {
-    color:white;
-}
-.gauche {
-    width: 70%;
-    padding: 20px;
-}
-
-
-.profil{
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    background-color: #564032;
-}
-
-.profil h1 ,.profil p , .profil h3 {
-    color:white;
-}
-.photo{
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
     object-fit: cover;
     object-position: top;
+    margin-left: 30px;
+    margin-right: -5vw;
+    z-index: 40;
+
 }
+
+section.profil {
+    position: absolute;
+    margin-top: var(--decalement);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 80%;
+    right: 25px;
+}
+
+
+.profil h1,
+.profil p,
+.profil h3 {
+    color: white;
+    margin-left: 10%;
+}
+
+.info {
+    background-color: var(--couleur-profil);
+    width: 78.9%;
+}
+
+.contenue {
+    padding-left: var(--indentation-texte);
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Montserrat';
+    align-items: center;
+}
+
+p {
+    font-family: 'open sans';
+}
+
+.icone i,
+ul,
+p {
+    margin-right: auto;
+    color: white;
+}
+
+h2 {
+    text-align: center;
+}
+
+/* Pour enlever le point de la liste non ordonnée et agir sur les bordures  */
+.coord>ul {
+    list-style: none;
+    padding: 10px;
+    margin: 0 0 0 15px;
+}
+
+
+/* Transition des elements (les textes defile lentement au depart puis accélère au mileu 
+et ralentissent à la fin avec ease-in-out pendant un temps donné) */
+.gauche ul li,
+.gauche ul li>i,
+.gauche h2 {
+    transition: all 0.2s ease-in-out;
+}
+
+/* Ajout des couleurs lors du survol des elements avec hover et transform : translateX(valeur) */
+.gauche ul li:hover,
+.gauche h2:hover {
+    transform: translateX(-5px);
+    color: burlywood;
+
+    i {
+        color: burlywood;
+    }
+}
+
+/* Animation sur la photo du cv  */
+.profil img{
+        transition: all 0.3s ease-out;
+}
+
+.profil img:hover{
+    transform: scale(1.5);
+}
+
+/* Aniamation du profile (class info) */
+
+.profil{
+  animation-duration: 2s;
+  animation-name: slidein;
+  animation-delay: .8s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+}
+@keyframes slidein {
+  from {
+    transform:translateX(120px);
+    width: 150%;
+  }
+
+  to {
+    transform:translateX(0%);
+    width: 100%;
+  }
+}
+
+/* Animation sur le nom  */
+
+.info h1 {
+    transition: all 0.2s ease-out;
+}
+
+.info h1:hover {
+    transform: translateY(2px);
+    color: rgb(194, 161, 119);
+}
+
+/* Animation sur Informaticien  */
+
+.info h3 {
+    transition: all 0.2s ease-out;
+}
+
+.info h3:hover {
+    transform: translateY(2px);
+    color: rgb(194, 161, 119);
+}
+
+/* Animation sur texte dans profil (p)  */
+
+.info p {
+    transition: all 0.2s ease-out;
+}
+
+.info p:hover {
+    transform: translateY(2px);
+    color: rgb(194, 161, 119);
+}
+
+
+/* Animation sur les titres de la partie droite */
+
+.droite h2{
+    transition: all 0.2s ease-in-out;
+}
+
+.droite h2:hover {
+    transform: translateX(-5px);
+    color: burlywood;
+}
+
+.page-footer {
+    margin-top: 40px;
+    padding: 15px;
+    text-align: center;
+}
+
+.page-footer a {
+    padding: 10px 18px;
+    margin: 5px;
+    border: 2px;
+    border-radius: 6px;
+    background-color: rgb(236, 228, 228);
+    color: rgb(10, 10, 10);
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+
+/* Transition footer */
+.page-footer a {
+    transition: all 0.3s ease-in;
+}
+
+/* Hover bouton retour */
+.btn-retour:hover {
+    background-color: #283036;
+    transform: translateY(-3px);
+}
+
+/* Hover bouton télécharger */
+.btn-telecharger:hover {
+    background-color: var(--couleur-primaire);
+    transform: translateY(-3px);
+}
+
+/* Animation sur les ul  de droite*/
+
+.droite ul{
+    transition: all 0.2s ease-out;
+}
+
+.droite ul:hover {
+    transform: translateY(2px);
+    color: rgb(194, 161, 119);
+}
+
 
