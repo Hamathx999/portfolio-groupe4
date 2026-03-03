@@ -8,7 +8,6 @@ body {
     display: grid;
     font-family: 'Times New Roman';
 }
-
 .cv-container {
     width: 400px;
     height: 600px;
@@ -82,4 +81,15 @@ section {
     .experience {
         margin: 10px 5px;
     }
+}
+
+.btn-telecharger {
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #7C5740;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
 }
