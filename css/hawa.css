@@ -64,7 +64,7 @@ body {
 /* LEFT COLUMN */
 .left {
   width: 38%;
-  background: #e6e6e6;
+  background: #50392B;
   /* padding: 20px; */
   position: relative;
   section {
@@ -74,7 +74,7 @@ body {
 
 /* Arche photo */
 .photo-arch {
-  background: #e6e6e6;
+  background: #50392B;
   height: 260px;
   border-radius: 160px 160px 0 0;
   display: flex;
@@ -92,13 +92,14 @@ body {
 }
 
 .left h3 {
-  color: #7a5237;
+  color: #fdfaf8;
   margin: 25px 0 10px;
   font-size: 16px;
 }
 
 .left p {
   font-size: 14px;
+  color: #fdfaf8;
   margin-bottom: 10px;
 }
 
