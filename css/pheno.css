@@ -8,6 +8,7 @@ body {
     display: grid;
     font-family: 'Times New Roman';
 }
+
 .cv-container {
     width: 400px;
     height: 600px;
@@ -78,18 +79,42 @@ section {
         margin: 10px 5px;
 
     }
+
     .experience {
         margin: 10px 5px;
     }
 }
 
-.btn-telecharger {
-    margin: 20px;
-    padding: 10px 20px;
-    background-color: #7C5740;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 14px;
+
+.cv-footer {
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+
+    .btn-telecharger {
+        margin: 20px;
+        padding: 10px 20px;
+        background-color: #7C5740;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 14px;
+    }
+
+    .btn-telecharger:hover {
+        background-color: #5A3E2B;
+    }
+
+    .btn-back {
+        margin: 20px;
+        padding: 10px 20px;
+        background-color:  #fff ;
+        color: #7C5740;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 14px;
+    }
+
 }
