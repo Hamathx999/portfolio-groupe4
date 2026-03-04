@@ -53,6 +53,9 @@ main {
             }
 
             p {
+                display: flex;
+                align-items: center;
+                gap: 10px;
                 font-size: 10px;
                 margin-bottom: -10px;
 
@@ -63,6 +66,9 @@ main {
                     border-radius: 50%;
                     display: inline-block;
                     box-sizing: border-box;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
                 }
             }
 
@@ -75,8 +81,6 @@ main {
                 li {
                     font-size: 10px;
                     margin-bottom: 5px;
-                    position: relative;
-
                 }
             }
         }
@@ -96,7 +100,7 @@ main {
             background-color: var(--couleurprimaire);
             margin-top: 40px;
             position: absolute;
-            left: 100px;
+            left: 110px;
             border-radius: 10px 0 0 10px;
             color: var(--couleurblanche);
 
@@ -126,7 +130,7 @@ main {
             position: absolute;
             background-color: #656262;
             left: 40px;
-            top: 50px;
+            top: 60px;
 
             img {
                 width: 120px;
