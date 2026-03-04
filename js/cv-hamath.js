@@ -1,7 +1,8 @@
 document.addEventListener("DOMContentLoaded", function() {
-  const bouton = document.getElementById("telecharger");
+  const bouton = document.querySelector('a');
 
     bouton.addEventListener("click", function() {
-      alert("CV téléchargé avec succès!");
+        bouton.href="../pdf/Hamath's portfolio.pdf";
+        bouton.download="CV De Hamath";
     });
   });
