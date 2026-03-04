@@ -190,14 +190,15 @@ i {
 }
 .left{
   h3{
-    text-align: center;
+    /* text-align: center; */
+    padding:  0 10px;
   }
 }
-.right{
+/* .right{
   h3{
     text-align: center;
   }
-}
+} */
   /* La responsive */
 
 @media (max-width: 992px) {
@@ -309,4 +310,8 @@ i {
   .actions {
     display: none;
   }
+}
+.tele{
+  text-decoration: none;
+  color: #7a5237;
 }
