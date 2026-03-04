@@ -5,9 +5,14 @@
     --couleurliennoir:#000;
     
 }
-@keyframes slide{
-    from{transform: translateX(-140px);}
-   to{transform: translateX(140vw);}
+@keyframes fondu{
+    from{opacity: 0;}
+    40%{opacity: 0.8;}
+   to{opacity: 1;}
+}
+@keyframes fonduheader{
+    from{opacity: 0;}
+   to{opacity: 1;}
 }
 header{
 background-color: var(--couleurprimaire);
@@ -19,8 +24,10 @@ background-color: var(--couleurblanche);
 padding-left:10px ;
 position: absolute;
 top: 10px;
+z-index: 100;
 left:10%;
 box-shadow: 0px 1px 2px var(--couleurliennoir);
+ animation: fondu 1s ease-in-out .5s 1;
 
     div.identite{
      display:flex;
@@ -56,15 +63,22 @@ box-shadow: 0px 1px 2px var(--couleurliennoir);
 main{
     section.presentation{
         display: flex;
-        background: linear-gradient(to top,orange,red);
+        /* background: linear-gradient(to top,orange,red); */
         margin-top: 35px;
         border-radius: 30px;
-        height: 40vh;
+        height: 60vh;
+        animation: fondu 1.5s ease-in 1s 1;
         text-indent: 30px;
         text-align: center;
         padding-top: 10px;
         justify-content: center;
         align-items: center;
+        background-image: url('/images/logo.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: 50%;
+        background-color: rgba(255, 255, 255, 0.34);
+        
         
     }
 }
@@ -99,4 +113,22 @@ footer{
     text-align: center;
     border-radius: 20px 20px 0px 0px;
     color: var(--couleurblanche);
+}
+.modification{
+width: 25vw;
+height: 30vh;
+object-fit: cover;
+
+}
+img[alt=logo]{
+    width: 40px;
+    /* height: 40px; */
+}
+h1{
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+}
+*{font-family:"Open Sans", sans-serif;}
+.cadrepresentation{
+ 
 }
