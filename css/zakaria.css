@@ -1,0 +1,316 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  background: #eee;
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+
+.cv {
+  width: 700px;
+  background: white;
+  margin: 0 auto;
+}
+
+/* HEADER */
+.top-header {
+  background: #7a5237;
+  color: white;
+  padding: 30px 80px 50px;
+  direction: rtl;
+  position: relative; 
+    
+ 
+}
+
+.name .prenom {
+  font-size: 32px;
+  font-weight: 300;
+  /* top: 20px;    */
+     right: 50px;
+    position: relative; 
+    
+}
+
+.name .nom {
+  display: block;
+  font-size: 42px;
+  font-weight: 700;
+   /* top: 50px;    */
+   right: 50px;
+   position: relative; 
+}
+
+.job {
+  margin-top: 10px;
+  font-size: 22px;
+    right: 30px;
+    top: 30px; 
+       
+    /* left: 15px; */
+    position: relative; 
+}
+
+/* BODY */
+.body {
+  display: flex;
+}
+
+.space {
+  width: 4%;
+  background-color: #fff;
+}
+
+/* LEFT COLUMN */
+.left {
+  width: 38%;
+  background: #e6e6e6;
+  /* padding: 20px; */
+  position: relative;
+  .section {
+    padding: 0 10px;
+  }
+}
+
+/* Arche photo */
+.photo-arch {
+  background: #e6e6e6;
+  height: 260px;
+  border-radius: 160px 160px 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -190px;
+}
+
+.photo-arch img {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  border: 6px  #7a5237;
+  object-fit: cover;
+}
+
+.left h3 {
+  color: #7a5237;
+  margin: 25px 0 10px;
+  font-size: 16px;
+}
+
+.left p {
+  font-size: 14px;
+  margin-bottom: 10px;
+  padding: 0 10px;
+}
+
+/* RIGHT COLUMN */
+.right {
+  width: 65%;
+  padding: 30px;
+}
+
+.right h3 {
+  color: #7a5237;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.right p {
+  font-size: 14px;
+  margin-bottom: 12px;
+  line-height: 1.6;
+  position: relative;
+}
+
+i {
+  margin-right: 8px;
+  color: #7a5237;
+}
+
+.actions {
+  position: fixed;     /* reste visible même en scroll */
+  top: 20px;           /* distance du haut */
+  right: 20px;         /* distance de la droite */
+  display: flex;
+  gap: 15px;           /* espace entre les boutons */
+  z-index: 1000;       /* toujours au-dessus */
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+ 
+
+.button {
+  background: transparent;
+  color: #7a5237;
+  border: 2px solid #7a5237;
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.retour {
+  background: transparent;
+  border: 2px solid #7a5237;
+  padding: 8px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.retour a {
+  text-decoration: none;
+  color: #7a5237;
+  font-weight: 600;
+}
+
+.retour:hover {
+  background: #7a5237;
+}
+.button:hover {
+  background: #7a5237;
+}
+
+.retour:hover a {
+  color: #fff;
+}
+.button:hover span {
+  color: #fff;
+}
+.button:hover i {
+  color: #fff;
+}
+.left{
+  h3{
+    text-align: center;
+  }
+}
+.right{
+  h3{
+    text-align: center;
+  }
+}
+  /* La responsive */
+
+@media (max-width: 992px) {
+  .cv {
+     width: 100%; 
+  }
+
+  .top-header {
+    padding: 30px 40px 60px;
+  }
+
+  .left {
+    width: 40%;
+  }
+
+  .right {
+    width: 60%;
+    padding: 25px;
+  }
+} 
+
+
+@media (max-width: 768px) {
+
+  body {
+    padding: 10px;
+  }
+
+  /* HEADER */
+  .top-header {
+    direction: ltr;
+    text-align: center;
+    padding: 25px 20px 80px;
+  }
+
+  .name .prenom {
+    font-size: 26px;
+    right: 0;
+  }
+
+  .name .nom {
+    font-size: 34px;
+    right: 0;
+  }
+
+  .job {
+    font-size: 18px;
+    right: 0;
+    top: 0;
+  }
+
+  /* BODY */
+  .body {
+    flex-direction: column;
+  }
+
+  .space {
+    display: none;
+  }
+
+  /* LEFT COLUMN */
+  .left {
+    width: 100%;
+    border-radius: 20px;
+    margin-top: -60px;
+    padding-bottom: 20px;
+  }
+
+  /* PHOTO */
+  .photo-arch {
+    margin-top: -150px;
+    height: 220px;
+    border-radius: 140px 140px 0 0;
+  }
+
+  .photo-arch img {
+    width: 180px;
+    height: 180px;
+  }
+
+  /* RIGHT COLUMN */
+  .right {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .right h3,
+  .left h3 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .actions {
+    top: 10px;
+    right: 10px;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .button,
+  .retour {
+    padding: 8px 14px;
+    font-size: 13px;
+  }
+}
+
+@media print {
+  .actions {
+    display: none;
+  }
+}
+.tele{
+  text-decoration: none;
+  color: #7a5237;
+}
