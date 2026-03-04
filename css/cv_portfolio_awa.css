@@ -3,15 +3,16 @@
     --decalement: 5vh;
     --couleur-profil: #564032;
     --indentation-texte: 10vw;
-    --espacement-interieur: 250px 0 0 0;
+    --espacement-interieur: 270px 0 0 0;
 }
 
 body {
     background-color: white;
+
 }
 
 main {
-    width: 80%;
+    width: 65%;
     margin: auto;
     display: flex;
     justify-content: center;
@@ -21,7 +22,10 @@ main {
 }
 
 .gauche {
-    padding: var(--espacement-interieur);
+    /* padding: var(--espacement-interieur); */
+    padding-top: 300px;
+    margin: 4px;
+    border-radius: 4vw;
     /* width: 30%; */
     background-color: var(--couleur-primaire);
 }
@@ -48,6 +52,7 @@ main {
 .droite li,
 .droite ul {
     color: rgb(3, 3, 3);
+    align-content: justify;
 }
 
 .droite ul,
@@ -81,6 +86,7 @@ section.profil {
     align-items: center;
     width: 80%;
     right: 25px;
+
 }
 
 
@@ -93,7 +99,10 @@ section.profil {
 
 .info {
     background-color: var(--couleur-profil);
-    width: 78.9%;
+    width: 69.6%;
+    border-radius: 25px 0 0 25px;
+    border: .6px solid rgb(250, 247, 247);
+
 }
 
 .contenue {
@@ -119,15 +128,46 @@ p {
 }
 
 h2 {
-    text-align: center;
+    margin: auto;
+    padding: 2vw;
+    text-align: left;
 }
 
 /* Pour enlever le point de la liste non ordonnée et agir sur les bordures  */
 .coord>ul {
     list-style: none;
     padding: 10px;
-    margin: 0 0 0 15px;
+    margin: 0 0 0 10px;
 }
+
+.qualite h2 {
+    padding: 10px;
+    margin: 0 0 0 10px;
+}
+
+.centre h2 {
+    padding: 10px;
+    margin: 0 0 0 10px;
+}
+ .langue h2 {
+    padding: 10px;
+    margin: 0 0 0 10px;
+}
+
+.competence h2 {
+    padding: 10px;
+    margin: 0 0 0 10px;
+}
+
+.coord h2 {
+    padding: 10px;
+    margin: 0 0 0 10px;
+}
+
+
+
+
+
 
 
 /* Transition des elements (les textes defile lentement au depart puis accélère au mileu 
@@ -150,34 +190,35 @@ et ralentissent à la fin avec ease-in-out pendant un temps donné) */
 }
 
 /* Animation sur la photo du cv  */
-.profil img{
-        transition: all 0.3s ease-out;
+.profil img {
+    transition: all 0.3s ease-out;
 }
 
-.profil img:hover{
+.profil img:hover {
     transform: scale(1.5);
 }
 
 /* Aniamation du profile (class info) */
 
-.profil{
-  animation-duration: 2s;
-  animation-name: slidein;
-  animation-delay: .8s;
-  animation-timing-function: linear;
-  animation-iteration-count: 1;
-  animation-direction: alternate;
+.profil {
+    animation-duration: 2s;
+    animation-name: slidein;
+    animation-delay: .8s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
 }
-@keyframes slidein {
-  from {
-    transform:translateX(120px);
-    width: 150%;
-  }
 
-  to {
-    transform:translateX(0%);
-    width: 100%;
-  }
+@keyframes slidein {
+    from {
+        transform: translateX(120px);
+        width: 150%;
+    }
+
+    to {
+        transform: translateX(0%);
+        width: 100%;
+    }
 }
 
 /* Animation sur le nom  */
@@ -216,7 +257,7 @@ et ralentissent à la fin avec ease-in-out pendant un temps donné) */
 
 /* Animation sur les titres de la partie droite */
 
-.droite h2{
+.droite h2 {
     transition: all 0.2s ease-in-out;
 }
 
@@ -269,7 +310,7 @@ et ralentissent à la fin avec ease-in-out pendant un temps donné) */
 
 /* Animation sur les ul  de droite*/
 
-.droite ul{
+.droite ul {
     transition: all 0.2s ease-out;
 }
 
@@ -278,4 +319,73 @@ et ralentissent à la fin avec ease-in-out pendant un temps donné) */
     color: rgb(194, 161, 119);
 }
 
+.skill,
+.comaf {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
 
+.skill h4,
+.skill p,
+.comaf h4,
+.comaf p {
+    margin: 0;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    color: #7C5740;
+}
+
+
+/* Animation sur skill et comaf */
+
+.skill h4 ,p  {
+    transition: all 0.2s ease-in-out;
+}
+
+.skill h4:hover , p:hover ,h4:hover{
+    transform: translateX(-5px);
+    color: burlywood;
+}
+
+.droite p {
+    margin: 0;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    font-size: medium;
+    /* color: #7C5740; */
+
+
+}
+
+
+.droite h2 {
+    margin: -2px;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    margin-bottom: 5px;
+}
+
+
+.droite ul {
+    margin-left: 5vw;
+    padding-left: 10px;
+}
+
+.droite ul li {
+    margin-bottom: 3px;
+}
+
+
+/* Animation li droite  */
+.droite ul li
+ {
+    transition: all 0.2s ease-in-out;
+}
+
+/* Ajout des couleurs lors du survol des elements avec hover et transform : translateX(valeur) */
+.droite ul li:hover
+{
+    transform: translateX(-5px);
+    color: burlywood;
+}
