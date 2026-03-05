@@ -55,7 +55,7 @@ img {
     object-fit: cover;
     position: absolute;
     top: 62px;
-    left: 81px;
+    left: 13px;
     z-index: 1;
     border: 8px solid white;
     box-sizing: content-box;
@@ -68,18 +68,18 @@ img {
 .carre{
     background-color: #F8EDE8;
     border-radius: 10px 0px 0px 10px;
-    padding: 10px 5px 5PX 88px;
+    padding: 10px 5px 5PX 23px;
     position: absolute;
     top: 47px;
-    left: 148px;
-    width: 257px;
+    left: 93px;
+    width: 377px;
 }
 .nom {
     font-family: "Playfair Display SC", serif;
     color: #D39D76;
     font-size: 20px;
     font-weight: lighter;
-    margin-left: 0;
+    margin-left: 44px;
     text-align: start;
    
 }
@@ -89,10 +89,12 @@ img {
     font-size: 18px;
     font-weight: bold;
     margin-top: -5px;
+    margin-left: 46px;
 }
 .carre .presentation{
     color: #776962;
     margin-top: 5px;
+    margin-left: 46px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
 }
@@ -169,11 +171,12 @@ span{
     }
 }
 .ligne{
-    width: 180px;
+    width: 250px;
     margin-top: -13px;
     border: none;
     height: 3px;
     background-color: #CE9D78;
+    margin-left: 48px;
 }
 .lignee{
     width: 80px;
@@ -197,4 +200,18 @@ h1{
 }
 .i {
     margin-top: -2px;
+}
+i{
+    background-color: #A36E46;
+    border-radius: 50%;  
+}
+li{
+    text-transform: lowercase;
+}
+li::first-letter{
+    text-transform: uppercase;
+}
+.maj{
+    text-transform: uppercase;
+    font-weight: normal;
 }
