@@ -1,6 +1,13 @@
-const telecharger_bouton=document.querySelector("#telecharger");
-telecharger_bouton.onclick=()=>{
-     const lien=document.querySelector("#tele");
-    lien.setAttribute("href","/CV/CV_Zakaria.Pdf");
-    // lien.download="Votre "
-}
+document.addEventListener("DOMContentLoaded", function() {
+  const bouton = document.querySelector('#telecharger');
+
+    bouton.addEventListener("click", function() {
+      const lien = document.createElement('a');
+
+        lien.href="../CV/CV_Zakaria.pdf";
+        lien.download="cv_Zakaria_Nouhou";
+        lien.click();
+        alert("Le CV a été téléchargé avec succès !!");
+
+    });
+  });
