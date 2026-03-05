@@ -1,8 +1,13 @@
 document.addEventListener("DOMContentLoaded", function() {
-  const bouton = document.querySelector('a');
+  const bouton = document.querySelector('button');
 
     bouton.addEventListener("click", function() {
-        bouton.href="../pdf/Hamath's portfolio.pdf";
-        bouton.download="CV De Hamath";
+      const lien=document.createElement('a');
+
+        lien.href="../CV/CV De Hamath.pdf";
+        lien.download="CV De Hamath";
+        lien.click();
+        alert("Le cv est telecharger");
+
     });
   });

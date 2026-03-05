@@ -3,7 +3,7 @@
     --couleurprimaire:#353232;
     --couleurprincipale:#7c5740ff;
     --couleurliennoir:#000;
-    
+    /* scroll-behavior: smooth; */
 }
 @keyframes fondu{
     from{opacity: 0;}
@@ -16,14 +16,16 @@
 }
 header{
 background-color: var(--couleurprimaire);
+position: fixed;
+
 display: flex;
 justify-content: space-between;
 width: 80vw;
 border-radius: 50px;
 background-color: var(--couleurblanche);
 padding-left:10px ;
-position: absolute;
-top: 10px;
+
+top: 0;
 z-index: 100;
 left:10%;
 box-shadow: 0px 1px 2px var(--couleurliennoir);
@@ -68,15 +70,16 @@ main{
         border-radius: 30px;
         height: 60vh;
         animation: fondu 1.5s ease-in 1s 1;
-        text-indent: 30px;
+        /* text-indent: 30px; */
         text-align: center;
         padding-top: 10px;
         justify-content: center;
         align-items: center;
-        background-image: url('/images/logo.png');
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: 50%;
+        img{
+            width: 50%;
+            margin-top: 34px;
+        }
+        
         background-color: rgba(255, 255, 255, 0.34);
         
         
@@ -130,5 +133,6 @@ h1, h2{
 }
 *{font-family:"Open Sans", sans-serif;}
 .cadrepresentation{
- 
+ padding-right:110px ;
+ text-align: justify;
 }
