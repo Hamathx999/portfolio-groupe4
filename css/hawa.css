@@ -4,245 +4,112 @@
   box-sizing: border-box;
   font-family: "Segoe UI", Arial, sans-serif;
 }
-
 body {
-  background: #eee;
+  background-color: #d1c9c4;
   display: flex;
-  justify-content: center;
-  padding: 30px;
-}
-
-.cv {
-  width: 700px;
-  background: white;
-}
-
-/* HEADER */
-.top-header {
-  background: #7a5237;
-  color: white;
-  padding: 30px 80px 50px;
-  direction: rtl;
-    position: relative; 
-    
- 
-}
-
-.name .prenom {
-  font-size: 32px;
-  font-weight: 300;
-  top: 20px;   
-    right: 15px;
-    
-}
-
-.name .nom {
-  display: block;
-  font-size: 42px;
-  font-weight: 700;
-   top: 50px;   
-   right: 15px;
-}
-
-.job {
-  margin-top: 10px;
-  font-size: 22px;
-   top: 20px;   
-    left: 15px;
-}
-
-/* BODY */
-.body {
-  display: flex;
-}
-
-.space {
-  width: 5%;
-  background-color: #fff;
-}
-
-/* LEFT COLUMN */
-.left {
-  width: 38%;
-  background: #e6e6e6;
-  /* padding: 20px; */
-  position: relative;
-  section {
-    padding: 0 10px;
-  }
-}
-
-/* Arche photo */
-.photo-arch {
-  background: #e6e6e6;
-  height: 260px;
-  border-radius: 160px 160px 0 0;
-  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: -190px;
+
+}
+.container {
+ /* position: relative;
+  width: 100%;
+  max-width: 1000px;
+  min-height: 1000px;
+  background: #fdfdfd;
+  display: grid;
+  grid-template-columns: 1fr 2fr;*/
+  display: flex;
+  max-width: 900px;
+  width: 100%;
+  background-color: antiquewhite;
+  gap: 40px;
+
+
+    
+}
+header.entête {
+ /* position: absolute;
+
+  display: flex;
+  background: #50392B;
+  padding: 20px;
+  text-align: center;*/
+  background:#7c5740ff;
+  max-width: 900px;
+  width: 100%;
+  text-align: end;
+    color: white;
+    padding: 55px;  
+}
+.entête h1{
+  margin-right: 20px;
+  font-size: 60px;
+
+}
+.entête h2{
+  margin-right: 20px;
+  font-size: 50px;
+}
+.entête p{
+  margin-right: 20px;
+  font-size: 30px;
+  color: #FFFFFF;
 }
 
-.photo-arch img {
-  width: 220px;
-  height: 220px;
+.gauche {
+  width: 40%;
+  margin-top: -296px;
+  background: #50392B;
+  padding: 40px;
+  margin-left: 10px;
+  padding-left: 30px;
+  border-radius: 200px 200px 0px 0px;
+  
+}
+.photo{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  /* margin-top: -25px; */
+
+  img {
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
-  border: 6px  #7a5237;
-  object-fit: cover;
+  margin: 0 auto;
+ border: 6px solid #fff;
+ object-fit: cover;
 }
-
-.left h3 {
-  color: #7a5237;
-  margin: 25px 0 10px;
-  font-size: 16px;
 }
-
-.left p {
-  font-size: 14px;
-  margin-bottom: 10px;
+ul li{
+  margin-left: 30px;
 }
-
-/* RIGHT COLUMN */
-.right {
-  width: 65%;
-  padding: 30px;
+.contact i{
+  padding: 5px;
 }
-
-.right h3 {
-  color: #7a5237;
-  margin-bottom: 10px;
-  font-size: 18px;
+.contact p{
+  margin-top: -5px;
 }
-
-.right p {
-  font-size: 14px;
-  margin-bottom: 12px;
-  line-height: 1.6;
+.email{
+  margin-top: 10px;
 }
+.photo
 
-i {
-  margin-right: 8px;
-  color: #7a5237;
+.droite {
+  width:60%  ;
+
 }
-
-
-
-@media (max-width: 992px) {
-
-  .cv {
-    width: 100%;
-  }
-
-  .top-header {
-    padding: 30px 40px 60px;
-  }
-
-  .left {
-    width: 35%;
-  }
-
-  .right {
-    width: 65%;
-    padding: 25px;
-  }
+button {
+  /* background-color: #7c5740ff; */
+  color: rgb(0, 0, 0);
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
 }
-
-
-@media (max-width: 768px) {
-
-  body {
-    padding: 10px;
-  }
-
-  .cv {
-    width: 100%;
-  }
-
-  /* HEADER */
-  .top-header {
-    direction: ltr;
-    text-align: center;
-    padding: 25px 20px 80px;
-  }
-
-  .name .prenom {
-    font-size: 26px;
-  }
-
-  .name .nom {
-    font-size: 34px;
-  }
-
-  .job {
-    font-size: 18px;
-  }
-
-  /* BODY */
-  .body {
-    flex-direction: column;
-  }
-
-  .space {
-    display: none;
-  }
-
-  /* LEFT COLUMN */
-  .left {
-    width: 100%;
-    border-radius: 20px;
-    margin: -60px 10px 20px;
-    padding-bottom: 20px;
-  }
-
-  /* PHOTO */
-  .photo-arch {
-    margin-top: -150px;
-    height: 220px;
-    border-radius: 140px 140px 0 0;
-  }
-
-  .photo-arch img {
-    width: 180px;
-    height: 180px;
-  }
-
-  /* RIGHT COLUMN */
-  .right {
-    width: 100%;
-    padding: 20px;
-  }
-
-  .right h3 {
-    font-size: 16px;
-  }
-
-  .right p {
-    font-size: 14px;
-  }
-}
-
-
-@media (max-width: 480px) {
-
-  .name .prenom {
-    font-size: 22px;
-  }
-
-  .name .nom {
-    font-size: 30px;
-  }
-
-  .job {
-    font-size: 16px;
-  }
-
-  .left h3,
-  .right h3 {
-    font-size: 15px;
-  }
-
-  .left p,
-  .right p {
-    font-size: 13px;
-  }
+button:hover {
+  background-color: #7c5740ff;
+  color: white;
 }
