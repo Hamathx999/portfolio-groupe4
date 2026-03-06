@@ -14,7 +14,7 @@ h1, h3 {
     margin: 40px auto;
     background: white;
     position: relative;
-    width: 700px;
+    width: 595px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
@@ -26,18 +26,18 @@ h1, h3 {
 }
 
 .left{
-    width: 270px;
-    padding: 30px;
+    width: 268px;
+    padding: 0px 0px 0px 30px;
     margin-bottom: 5px;
     margin-top: 5px;
     background:rgba(124,87,64,0.28);
     border-radius: 12px;
-    padding-top: 350px;
+    padding-top: 300px;
 
 }
 .right {
-    padding: 30px;
-    padding-top: 350px;
+    padding:  10px;
+    padding-top: 300px;
     margin-bottom: 5px;
     background-color: #F2F0EF;
 }
@@ -50,13 +50,12 @@ h1, h3 {
     margin-left: 25.5%;
     background: #7C5740;
     color: white;
-    height: 209px;
-    width: 430px;
+    height: 150px;
+    width: 355px;
     padding: 45px;
     margin-top: 40px; 
     align-items: center;
-    
-     
+ 
 }
 
 .header-text h1{
@@ -73,8 +72,8 @@ right: 120px;
 }
 
 .photo {
-    width: 220px;
-    height: 220px;
+    width: 180px;
+    height: 180px;
     border-radius: 50%;
     object-fit: cover; 
     position: relative;
@@ -105,18 +104,22 @@ font-weight: 700
 .gras {
 font-weight: 700
 }
-.menu{
-    list-style: none;
-    padding-left: 15px;
-}
+
 .ecart{
-    margin-left:100px;
+    margin-left:90px;
 
 }
 .ligne{
     width: 68.01px;
     border: 1px solid white;
 }
+.lignemarron{
+    width: 95px;
+    border: 1px solid #A36E46;
+    margin-top: 20px;
+     margin-bottom: 10px;
+}
+
 
 
 
@@ -126,10 +129,17 @@ li i{
     clip-path: circle();
     margin-right: 7px;
     padding: 8px;
-  
-   
+
 }
 .menue{
     list-style: none;
-  padding-left: 10px;
+    padding-left: 10px;
+
+}
+.menue li{
+        padding-right: 15px;
+    }
+.menu{
+    list-style: none;
+    padding-left: 15px;
 }
