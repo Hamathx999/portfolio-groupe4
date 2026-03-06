@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  /* box-sizing: border-box; */
+  box-sizing: border-box;
   font-family: "Segoe UI", Arial, sans-serif;
 }
 body {
@@ -12,13 +12,6 @@ body {
   align-items: center;
 }
 .container {
- /* position: relative;
-  width: 100%;
-  max-width: 1000px;
-  min-height: 1000px;
-  background: #fdfdfd;
-  display: grid;
-  grid-template-columns: 1fr 2fr;*/
   display: flex;
   max-width: 900px;
   width: 100%;
@@ -26,12 +19,6 @@ body {
   gap: 40px;  
 }
 header.entête {
- /* position: absolute;
-
-  display: flex;
-  background: #50392B;
-  padding: 20px;
-  text-align: center;*/
   background:#7c5740ff;
   max-width: 900px;
   width: 100%;
@@ -67,7 +54,6 @@ header.entête {
   display: flex;
   justify-content: center;
   margin-bottom: 30px;
-  /* margin-top: -25px; */
 
   img {
   width: 250px;
@@ -114,7 +100,6 @@ ul li{
   margin-left: 200px;
 }
 button {
-  /* background-color: #7c5740ff; */
   color: rgb(0, 0, 0);
   border-radius: 10px;
   padding: 10px 20px;
