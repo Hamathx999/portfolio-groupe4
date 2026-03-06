@@ -97,14 +97,7 @@ body {
   position: relative;
 }
 
-/* .left h3::after {
-  content: "";
-  width: 40px;
-  height: 2px;
-  background: #7a5237;
-  display: block;
-  margin-top: 6px;
-} */
+ 
 
 .left p {
   font-size: 14px;
@@ -129,6 +122,11 @@ body {
 .right {
   width: 62%;
   padding: 30px;
+}
+
+.space {
+  width: 4%;
+  background-color: #fff;
 }
 
 .right h3 {
@@ -166,10 +164,7 @@ body {
   }
 }
 
-.space {
-  width: 4%;
-  background-color: #fff;
-}
+
 
 
 
