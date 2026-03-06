@@ -3,7 +3,7 @@ images.forEach((element)=>{
     element.onclick=(e)=>{
         const cible=e.target;
         const nom=cible.nextElementSibling.textContent.toLowerCase();
-        alert(nom);
+
         switch (nom) {
             case "hamath diallo":
                 window.location="cv-hamath diallo.html";
@@ -11,19 +11,19 @@ images.forEach((element)=>{
             case "seyba y sissoko":
                 window.location="cv-seyba y sissoko.html";
                 break;
-                case "aissata moulekafou":
+            case "aissata moulekafou":
                 window.location="cv-aissata moulekafou.html";
                 break;
-                case "al banou sylla":
+            case "al banou sylla":
                 window.location="cv-al banou sylla.html";
                 break;
-                case "hawa ballo":
+            case "hawa ballo":
                 window.location="cv-hawa ballo.html";
                 break;
-                case "koniba awa":
+            case "koniba awa":
                 window.location="cv-koniba awa.html";
                 break;
-                case "mohamed coulibaly":
+            case "mohamed coulibaly":
                 window.location="cv-mohamed coulibaly.html";
                 break;
                 case "zakaria nouhou":
