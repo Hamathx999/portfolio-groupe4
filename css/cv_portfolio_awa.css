@@ -3,7 +3,7 @@
     --decalement: 5vh;
     --couleur-profil: #564032;
     --indentation-texte: 10vw;
-    --espacement-interieur: 270px 0 0 0;
+    /* --espacement-interieur: 270px 0 0  0; */
 }
 
 body {
@@ -25,7 +25,7 @@ main {
     /* padding: var(--espacement-interieur); */
     padding-top: 300px;
     margin: 4px;
-    border-radius: 4vw;
+    border-radius: 4vw 0vw 0vw 4vw;
     /* width: 30%; */
     background-color: var(--couleur-primaire);
     align-content: center;
@@ -43,7 +43,7 @@ main {
 }
 
 .droite {
-    padding: var(--espacement-interieur);
+    /* padding: var(--espacement-interieur); */
     height: 87vh;
     background-color: #ffff;
 }
@@ -83,7 +83,7 @@ section.profil {
     position: absolute;
     margin-top: var(--decalement);
     display: flex;
-    justify-content: flex-start;
+    /* justify-content: flex-start; */
     align-items: center;
     width: 80%;
     right: 25px;
@@ -100,7 +100,7 @@ section.profil {
 
 .info {
     background-color: var(--couleur-profil);
-    width: 64.7%;
+    width: 69.7%;
     border-radius: 25px 0 0 25px;
     border: .6px solid rgb(250, 247, 247);
 
@@ -203,7 +203,7 @@ et ralentissent à la fin avec ease-in-out pendant un temps donné) */
 .profil {
     animation-duration: 2s;
     animation-name: slidein;
-    animation-delay: .8s;
+    animation-delay: .8s;      /* temps que ça prend avant de se charger  */
     animation-timing-function: linear;
     animation-iteration-count: 1;
     animation-direction: alternate;
@@ -530,11 +530,11 @@ h4:hover {
 
     }
 
-    hr {
-        width: 20%;
+    /* hr {
+        width: 30%;
         background-color: #7C5740;
         border: none;
-        height: 2px;
+        height: 4px;
         padding: 0px;
-    }
+    } */
 }
