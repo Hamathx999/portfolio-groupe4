@@ -1,69 +1,88 @@
-:root{
-    --couleurblanche:rgb(255, 255, 255);
-    --couleurprimaire:#353232;
-    --couleurprincipale:#7c5740ff;
-    --couleurliennoir:#000;
+:root {
+    --couleurblanche: rgb(255, 255, 255);
+    --couleurprimaire: #353232;
+    --couleurprincipale: #7c5740ff;
+    --couleurliennoir: #000;
     /* scroll-behavior: smooth; */
 }
-@keyframes fondu{
-    from{opacity: 0;}
-    40%{opacity: 0.8;}
-   to{opacity: 1;}
+
+@keyframes fondu {
+    from {
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0.8;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
-@keyframes fonduheader{
-    from{opacity: 0;}
-   to{opacity: 1;}
+
+@keyframes fonduheader {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
-header{
-background-color: var(--couleurprimaire);
-position: fixed;
 
-display: flex;
-justify-content: space-between;
-width: 80vw;
-border-radius: 50px;
-background-color: var(--couleurblanche);
-padding-left:10px ;
+header {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    width: 80vw;
+    border-radius: 50px;
+    background-color: var(--couleurblanche);
+    padding-left: 10px;
 
-top: 0;
-z-index: 100;
-left:10%;
-box-shadow: 0px 1px 2px var(--couleurliennoir);
- animation: fondu 1s ease-in-out .5s 1;
+    top: 0;
+    z-index: 100;
+    left: 10%;
+    box-shadow: 0px 1px 2px var(--couleurliennoir);
+    animation: fondu 1s ease-in-out .5s 1;
 
-    div.identite{
-     display:flex;
-     justify-content: baseline;
-     align-items: center;
-     gap: 5px;
-        }  
-    nav{
-        ul{
+    div.identite {
+        display: flex;
+        justify-content: baseline;
+        align-items: center;
+        gap: 5px;
+    }
+
+    nav {
+        ul {
             display: flex;
             list-style-type: none;
             gap: 10px;
-            
-            li{
+
+            li {
                 margin-right: 2vw;
-                transition:.5s linear;
-                &:hover{
+                transition: .5s linear;
+
+                &:hover {
                     transform: scale(1.2);
                 }
-                a{
+
+                a {
                     text-decoration: none;
                     color: var(--couleurliennoir);
                     transition: all .5s;
-                    &:hover{
+
+                    &:hover {
                         text-transform: uppercase;
                     }
                 }
             }
         }
-    } 
+    }
 
 }
-main{
-    section.presentation{
+
+main {
+    section.presentation {
         display: flex;
         /* background: linear-gradient(to top,orange,red); */
         margin-top: 35px;
@@ -75,41 +94,48 @@ main{
         padding-top: 10px;
         justify-content: center;
         align-items: center;
-        img{
+
+        img {
             width: 50%;
             margin-top: 34px;
         }
-        
+
         background-color: rgba(255, 255, 255, 0.34);
-        
-        
+
+
     }
 }
-.equipe{
+
+.equipe {
     display: flex;
     flex-wrap: wrap;
     align-content: center;
     align-items: center;
     justify-content: center;
 }
-img{
-    transition:.5s linear;
+
+img {
+    transition: .5s linear;
     width: 30vw;
 }
-img:hover{
+
+img:hover {
     transform: scale(1.1);
 }
-figure>img{
+
+figure>img {
     width: 25vw;
     border-radius: 3vh;
-    
+
 }
-figcaption{
+
+figcaption {
     margin-top: 5px;
-    transition:.5s linear;
+    transition: .5s linear;
     text-align: center;
 }
-footer{
+
+footer {
     padding-top: 10px;
     height: 20vh;
     background-color: var(--couleurprincipale);
@@ -117,22 +143,30 @@ footer{
     border-radius: 20px 20px 0px 0px;
     color: var(--couleurblanche);
 }
-.modification{
-width: 25vw;
-height: 30vh;
-object-fit: cover;
+
+.modification {
+    width: 25vw;
+    height: 30vh;
+    object-fit: cover;
 
 }
-img[alt=logo]{
+
+img[alt=logo] {
     width: 40px;
     /* height: 40px; */
 }
-h1, h2{
+
+h1,
+h2 {
     font-family: "Montserrat", sans-serif;
     text-align: center;
 }
-*{font-family:"Open Sans", sans-serif;}
-.cadrepresentation{
- padding-right:110px ;
- text-align: justify;
+
+* {
+    font-family: "Open Sans", sans-serif;
+}
+
+.cadrepresentation {
+    padding-right: 110px;
+    text-align: justify;
 }
