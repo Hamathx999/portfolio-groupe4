@@ -167,6 +167,19 @@ h2 {
 }
 
 .cadrepresentation {
-    padding-right: 110px;
     text-align: justify;
+}
+@media screen and (max-width:500px) {
+    footer {
+        height: 13vh;
+    }
+    figcaption {
+        font-size: 14px;
+    }
+    .modification {
+    width: 25vw;
+    height: 11vh;
+    object-fit: cover;
+
+}
 }
