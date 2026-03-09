@@ -39,7 +39,7 @@ images.forEach((element)=>{
         const nom=cible.nextElementSibling.textContent.toLowerCase();
         switch (nom) {
             case "hamath diallo":
-                window.location="cv-hamath diallo.html";
+                window.location="cv-Hamath Diallo.html";
                 break;
             case "seyba y sissoko":
                 window.location="cv-seyba y sissoko.html";
@@ -57,19 +57,19 @@ images.forEach((element)=>{
                 window.location="cv-koniba awa.html";
                 break;
             case "mohamed coulibaly":
-                window.location="cv-mohamed coulibaly.html";
+                window.location="cv-Mohamed Coulibaly.html";
                 break;
                 case "zakaria nouhou":
                 window.location="cv-zakaria nouhou.html";
                 break;
                 case "amidou diagana":
-                window.location="cv-amidou diagana.html";
+                window.location="cv-Amidou DIAGANA.html";
                 break;
                 case "cheick ayoub sanogo":
                 window.location="cv-cheick ayoub sanogo.html";
                 break;
                 case "amadou n'diaye":
-                window.location="cv-amadou n'diaye.html";
+                window.location="cv-Amadou N'diaye.html";
                 break;
             default:
                 alert("ce cv n'existe pas");
