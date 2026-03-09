@@ -8,7 +8,11 @@ body{
     display:flex;
     justify-content:center;
     padding:30px 0;
+<<<<<<< HEAD
     font-family:'Open Sans', sans-serif;
+=======
+    font-family:'Open Sans';
+>>>>>>> 0c105edeacf27b0733df1b882a1e8b6d30604bd2
 }
 
 .top-buttons {
@@ -124,7 +128,11 @@ body{
 }
 
 .left h3{
+<<<<<<< HEAD
     font-family:'Montserrat', sans-serif;
+=======
+    font-family:'Montserrat';
+>>>>>>> 0c105edeacf27b0733df1b882a1e8b6d30604bd2
     font-size:26px;
     margin-bottom:10px;
     text-decoration: underline;
@@ -180,6 +188,7 @@ body{
 }
 
 .dot.active {
+<<<<<<< HEAD
     background: var(--secondary); /* point vide */
 }
 .listdodo{
@@ -188,12 +197,21 @@ body{
 }
 
 /* RIGHT */
+=======
+    background: var(--secondary);
+}
+
+>>>>>>> 0c105edeacf27b0733df1b882a1e8b6d30604bd2
 .right{
     padding:40px 50px;
 }
 
 .section-title{
+<<<<<<< HEAD
     font-family:'Montserrat', sans-serif;
+=======
+    font-family:'Montserrat';
+>>>>>>> 0c105edeacf27b0733df1b882a1e8b6d30604bd2
     border-bottom:2px solid #7a7772;
     padding-bottom:5px;
     margin-bottom:12px;
@@ -232,6 +250,7 @@ body{
         font-style: italic;
         color: rgb(109, 107, 107);
 }
+<<<<<<< HEAD
 .circle{
     position:absolute;
     left:-32px;
@@ -246,6 +265,9 @@ body{
     font-weight:bold;
     font-size:14px;
 }
+=======
+
+>>>>>>> 0c105edeacf27b0733df1b882a1e8b6d30604bd2
 .title-line{
     display:flex;
     align-items:center;
@@ -260,5 +282,25 @@ body{
 .line{
     flex:1;
     height:2px;
+<<<<<<< HEAD
     background:var(--deep-walnut);
 }
+=======
+    background:#000;
+}
+
+.circle{
+    position:absolute;
+    left:-32px;
+    width:16px;
+    height:14px;
+    border-radius:50%;
+    border:3px solid #7a7772;
+    background:white;
+}
+
+.date{
+    font-weight:bold;
+    font-size:14px;
+}
+>>>>>>> 0c105edeacf27b0733df1b882a1e8b6d30604bd2
