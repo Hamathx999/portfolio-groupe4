@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
         lien.href="../CV/CV De Hamath.pdf";
         lien.download="CV De Hamath";
         lien.click();
-        alert("Le cv est telecharger");
+        alert("Le cv est telechargé !");
 
     });
   });
