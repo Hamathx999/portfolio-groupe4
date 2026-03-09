@@ -31,10 +31,7 @@ bouttonDeNavigation.addEventListener("click",()=>{
         popupDeNavigation.id="";
         info=false;
     }
- 
-
-    
- 
+  
 })
 images.forEach((element)=>{
     element.onclick=(e)=>{
@@ -50,16 +47,16 @@ images.forEach((element)=>{
                 case "aissata moulekafou":
                 window.location="cv-Moulekafou.html";
                 break;
-                case "al banou sylla":
+            case "al banou sylla":
                 window.location="cv-al banou sylla.html";
                 break;
-                case "hawa ballo":
+            case "hawa ballo":
                 window.location="cv-hawa ballo.html";
                 break;
-                case "koniba awa":
+            case "koniba awa":
                 window.location="cv-koniba awa.html";
                 break;
-                case "mohamed coulibaly":
+            case "mohamed coulibaly":
                 window.location="cv-mohamed coulibaly.html";
                 break;
                 case "zakaria nouhou":
