@@ -12,7 +12,7 @@ images.forEach((element)=>{
                 window.location="cv-seyba y sissoko.html";
                 break;
                 case "aissata moulekafou":
-                window.location="cv-aissata moulekafou.html";
+                window.location="cv-Moulekafou.html";
                 break;
                 case "al banou sylla":
                 window.location="cv-al banou sylla.html";
