@@ -89,11 +89,28 @@
              <div class="lignemarron"></div>
             <div><span class="gras">2022 - 2025: </span>Licence en électromécanique</div>
             <div><span class="gras">2019 - 2022:</span> Baccalauréat Sciences expérimentales </div>
-
-
         </div>
     </div>
  </div>
+ <div class="btn">
+      <button class="button" id="telecharger">Telecharger</button>
+      <a href="index.html"><button>Retour à l'accueil</button></a>
+</div>
+ <script>
+    document.addEventListener("DOMContentLoaded", function() {
+    const bouton = document.querySelector('button');
+
+    bouton.addEventListener("click", function() {
+      const lien=document.createElement('a');
+
+        lien.href="CV/CV-Moulekafou Aïssata.pdf";
+        lien.download="CV De Aïssata MOULEKAFOU";
+        lien.click();
+        alert("Le cv est telechargé !");
+
+    });
+  });
+ </script>
 </body>
 
 
