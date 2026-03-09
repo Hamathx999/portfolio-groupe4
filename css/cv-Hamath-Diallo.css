@@ -200,7 +200,19 @@ li::first-letter{
 }
 @media screen and (max-width: 550px) {
      div#main.main{
-        margin-left: -12px;
+        margin-left: 0px;
         margin-top: 60px;
      }
+    
+     .button{
+        margin-top: 5px;
+        right: -131px;
     }
+    .retour{
+        margin-top: 15px;
+    }
+    body {
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+}

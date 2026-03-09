@@ -1,9 +1,42 @@
 const images=document.querySelectorAll("figure>img");
+const contenu=document.querySelector("main");
+const liens = document.querySelectorAll("a");
+let info=false;
+const headertelephone=document.querySelector("header#tel");
+const bouttonDeNavigation=document.querySelector(".iconenavigation");
+const popupDeNavigation=document.querySelector(".menunavigationliste");
+const pied = document.querySelector("footer");
+liens.forEach((element)=> {
+    element.onclick = ()=>{
+        contenu.style.display="";
+        popupDeNavigation.id="";
+        bouttonDeNavigation.src="https://cdn-icons-png.flaticon.com/128/5358/5358649.png";
+    }
+}) 
+
+bouttonDeNavigation.addEventListener("click",()=>{
+    if (!info) {
+        bouttonDeNavigation.setAttribute("src","https://cdn-icons-png.flaticon.com/128/7782/7782784.png");
+        bouttonDeNavigation.style.width="20px";
+        contenu.style.display="none";
+    pied.style.display="none";
+    popupDeNavigation.setAttribute("id","menuouvert");
+    info=true;
+    }
+    else{
+        bouttonDeNavigation.setAttribute('src',"https://cdn-icons-png.flaticon.com/128/5358/5358649.png");
+        contenu.style.display="";
+        bouttonDeNavigation.style.width="";
+        pied.style.display="";
+        popupDeNavigation.id="";
+        info=false;
+    }
+  
+})
 images.forEach((element)=>{
     element.onclick=(e)=>{
         const cible=e.target;
         const nom=cible.nextElementSibling.textContent.toLowerCase();
-
         switch (nom) {
             case "hamath diallo":
                 window.location="cv-hamath diallo.html";
@@ -11,8 +44,8 @@ images.forEach((element)=>{
             case "seyba y sissoko":
                 window.location="cv-seyba y sissoko.html";
                 break;
-            case "aissata moulekafou":
-                window.location="cv-aissata moulekafou.html";
+                case "aissata moulekafou":
+                window.location="cv-Moulekafou.html";
                 break;
             case "al banou sylla":
                 window.location="cv-al banou sylla.html";
