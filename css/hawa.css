@@ -10,30 +10,13 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-<<<<<<< HEAD
-
 }
 .container {
- /* position: relative;
-  width: 100%;
-  max-width: 1000px;
-  min-height: 1000px;
-  background: #fdfdfd;
-  display: grid;
-  grid-template-columns: 1fr 2fr;*/
-=======
-}
-.container {
->>>>>>> 0c105edeacf27b0733df1b882a1e8b6d30604bd2
   display: flex;
   max-width: 900px;
   width: 100%;
   background-color: antiquewhite;
-<<<<<<< HEAD
   gap: 40px;
-
-
-    
 }
 header.entête {
  /* position: absolute;
@@ -42,11 +25,6 @@ header.entête {
   background: #50392B;
   padding: 20px;
   text-align: center;*/
-=======
-  gap: 40px;  
-}
-header.entête {
->>>>>>> 0c105edeacf27b0733df1b882a1e8b6d30604bd2
   background:#7c5740ff;
   max-width: 900px;
   width: 100%;
@@ -57,10 +35,6 @@ header.entête {
 .entête h1{
   margin-right: 20px;
   font-size: 60px;
-<<<<<<< HEAD
-
-=======
->>>>>>> 0c105edeacf27b0733df1b882a1e8b6d30604bd2
 }
 .entête h2{
   margin-right: 20px;
@@ -80,20 +54,12 @@ header.entête {
   margin-left: 10px;
   padding-left: 30px;
   border-radius: 200px 200px 0px 0px;
-<<<<<<< HEAD
-  
-=======
-  color: white;
->>>>>>> 0c105edeacf27b0733df1b882a1e8b6d30604bd2
 }
 .photo{
   display: flex;
   justify-content: center;
   margin-bottom: 30px;
-<<<<<<< HEAD
   /* margin-top: -25px; */
-=======
->>>>>>> 0c105edeacf27b0733df1b882a1e8b6d30604bd2
 
   img {
   width: 250px;
@@ -115,7 +81,6 @@ ul li{
 }
 .email{
   margin-top: 10px;
-<<<<<<< HEAD
 }
 .photo
 
@@ -135,49 +100,3 @@ button:hover {
   background-color: #7c5740ff;
   color: white;
 }
-=======
-}
-
-
-.droite {
-  width:60%  ;
-
-}
-.droite h1{
-  color:#50392b ;
-}
-.droite h2{
-  color:#50392b ;
-}
-.line{
-  position: absolute;
-  height: 2px;
-  width: 200px;
-  background-color: #50392b;
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  margin-top: -20px;
-  margin-left: 200px;
-}
-button {
-  color: rgb(0, 0, 0);
-  border-radius: 10px;
-  padding: 10px 20px;
-  margin: 10px;
-  cursor: pointer;
-}
-button:hover {
-  background-color: #7c5740ff;
-  color: white;
-}
-.linegauche{
-  position: absolute;
-  display: flex;
-  flex-direction: row;
-margin-left: 230px;
-border: 1px solid white;
-width: 60px;
-margin-top: -20px;
-}
->>>>>>> 0c105edeacf27b0733df1b882a1e8b6d30604bd2

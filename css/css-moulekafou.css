@@ -25,6 +25,7 @@ h1, h3 {
     background: white;
     display: grid;
       width: 700px;
+}
 /* HEADER */
 .header {
     
@@ -51,9 +52,7 @@ h1, h3 {
     
     border-radius: 50%;
     object-fit: cover;
-    border: 2px solid white;
-
-   
+    border: 2px solid white;  
 }
 /* CONTENU */
 .content {
@@ -66,6 +65,7 @@ h1, h3 {
     border-radius: 12px;
     padding-top: 260px;
 
+}
 }
 .right {
     padding:  10px;
