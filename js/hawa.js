@@ -1,17 +1,13 @@
-function telechargerCV() {
+document.addEventListener("DOMContentLoaded", function() {
+  const bouton = document.querySelector('button');
 
-    const element = document.querySelector("main");
+    bouton.addEventListener("click", function() {
+      const lien=document.createElement('a');
 
-    const options = {
-        margin: 0.5,
-        filename: "cv-Hawa-Ballo.pdf",
-        image: { type: "jpeg", quality: 0.98 },
-        html2canvas: { scale: 2 },
-        jsPDF: { unit: "cm", format: "a4", orientation: "portrait" }
-    };
+        lien.href="CV/cv-hawa.pdf";
+        lien.download="CV De Hawa";
+        lien.click();
+        alert("Le cv est telechargé !");
 
-    html2pdf().set(options).from(element).save();
-
-    alert("Le fichier est téléchargé avec succès");
-
-}
+    });
+  });
