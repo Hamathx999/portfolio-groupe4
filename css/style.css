@@ -1,18 +1,10 @@
-<<<<<<< Updated upstream
 :root {
     --couleurblanche: rgb(255, 255, 255);
     --couleurprimaire: #353232;
     --couleurprincipale: #7c5740ff;
     --couleurliennoir: #000;
     /* scroll-behavior: smooth; */
-=======
-:root{
-    --couleurblanche:rgb(255, 255, 255);
-    --couleurprimaire:#353232;
-    --couleurprincipale:#7c5740ff;
-    --couleurliennoir:#000;
-    scroll-behavior: smooth;
->>>>>>> Stashed changes
+
 }
 
 @keyframes fondu {

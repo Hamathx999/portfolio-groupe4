@@ -1,57 +1,3 @@
-<<<<<<< albanou
-*{
-padding:0px;
-margin:0px;
-}
-header{
-position:absolute;
-}
-section.equipe{
-
-gap:10%;
-}
-article{
-width:40%;
-}
-
-section.presentation{
-    margin-top: 0%;
-    height:20%;
-
-
-    .cadrepresentation{
-    font-size:clamp(.5rem,2vh,2rem);
-    padding:0;
-    }
-
-}
-#logo_presentation{
-        display:inline-block;
-        width:25%;
-}
-figure>figcaption{
-font-size:2vh;
-}
-
-.equipe{
-justify-content:space-evenly;
-}
-figure>img{
-width:100%;
-height:80%;
-}
-.modification{
-width:100%;
-height:80%;
-}
-.personne11{
-width:60%;
-
-}
-footer{
-font-size:small;
-}
-=======
 .cadrepresentation {
     p {
         font-size: 12px;
@@ -71,4 +17,3 @@ section {
         font-size: 12px;
     }
  }
->>>>>>> main
