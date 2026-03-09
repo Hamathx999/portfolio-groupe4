@@ -36,7 +36,7 @@ h1, h3 {
 }
 .right {
     padding:  10px;
-    padding-top: 300px;
+    padding-top: 260px;
     margin-bottom: 5px;
     background-color: #F2F0EF;
     left: 90px;
@@ -134,8 +134,49 @@ li i{
     top: 315px;
     margin-left: -95px;
 }
+
+.menu{
+    list-style: none;
+    padding: 0px 0px 0px 15px;
+}
 .h3{
     
     top: 310px ;
     margin-bottom: 80px;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+
+
+.retour{
+  color:#7C5740;
+  padding : 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  background-color: white;
+border: 1px solid #7C5740;}
+
+
+.retour:hover {
+        background-color: #7C5740;
+color: white;}
+
+
+.buttontelech{
+  color:#7C5740;
+  padding: 10px 20px;
+  margin: 10px;
+    cursor: pointer;
+  font-size: 14px;
+  background:rgba(124,87,64,0.28);
+border: 1px solid #ffff;
+}
+
+.buttontelech:hover {
+        background-color: white;
+color: #7C5740;}
 }
