@@ -42,7 +42,7 @@ images.forEach((element)=>{
                 window.location="cv-Hamath Diallo.html";
                 break;
             case "seyba y sissoko":
-                window.location="cv-seyba y sissoko.html";
+                window.location="cv-seyba Y Sissoko.html";
                 break;
                 case "aïssata moulekafou":
                 window.location="cv-Moulekafou.html";
@@ -51,7 +51,7 @@ images.forEach((element)=>{
                 window.location="cv-al banou sylla.html";
                 break;
             case "hawa ballo":
-                window.location="cv-hawa ballo.html";
+                window.location="cv-Hawa Ballo.html";
                 break;
             case "koniba awa":
                 window.location="cv-koniba awa.html";
