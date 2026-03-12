@@ -51,7 +51,7 @@ images.forEach((element)=>{
                 window.location="cv-al banou sylla.html";
                 break;
             case "hawa ballo":
-                window.location="cv-Hawa Ballo.html";
+                window.location="cv-hawa ballo.html";
                 break;
             case "koniba awa":
                 window.location="cv-koniba awa.html";
