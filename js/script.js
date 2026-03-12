@@ -41,7 +41,7 @@ images.forEach((element)=>{
             case "hamath diallo":
                 window.location="cv-Hamath Diallo.html";
                 break;
-            case "seyba y sissoko":
+            case "seyba yacouba sissoko":
                 window.location="cv-seyba Y Sissoko.html";
                 break;
                 case "aïssata moulekafou":
