@@ -53,7 +53,7 @@ images.forEach((element)=>{
             case "hawa ballo":
                 window.location="cv-hawa ballo.html";
                 break;
-            case "koniba awa":
+            case "awa koniba":
                 window.location="cv-koniba awa.html";
                 break;
             case "mohamed coulibaly":
